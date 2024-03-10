@@ -1,5 +1,5 @@
-function pages(){
-    document.write(`
+function pages() {
+  document.write(`
     <div class="d-flex justify-content-center pagination">
         <nav aria-label="pagination">
             <ul class="pagination">
