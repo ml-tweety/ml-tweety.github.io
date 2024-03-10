@@ -36,7 +36,10 @@ function ads_midquestion_position(){
   return which_ad;
 }
 function ads_midquestion() {
-  document.write("Mid Page Ads.");
+  document.write(`<div class="row table-success midquestion_position text-center align-items-center">
+  <div class="col-sm-12 col-md-12 col-xl-12 col-lg-12 ">
+    <h1>Space for ad.</h1>
+  </div></div>`);
 }
 function baseurl() {
   window.location.replace(base_url);

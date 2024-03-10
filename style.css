@@ -222,4 +222,8 @@ i {
   }
   /* back to top ends */
 
-  
+  .midquestion_position{
+	height: 150px;
+	border-radius: 10px;
+	margin:auto;
+  }
