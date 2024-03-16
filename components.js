@@ -1,4 +1,4 @@
-var base_url = "http://127.0.0.1:5500";
+var base_url = "https://ml-tweety.github.io/";
 
 function navbar() {
   document.write(`
