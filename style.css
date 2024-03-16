@@ -226,4 +226,11 @@ i {
 	height: 150px;
 	border-radius: 10px;
 	margin:auto;
+  border: 1px solid rgb(0, 0, 0);
   }
+
+/* hidden starts */
+  .hidden {
+    display:none;
+}
+/* hidden starts */
