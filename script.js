@@ -112,4 +112,10 @@ function topFunction() {
 }
 // back to top ends
 
+//  explaination starts
+function showExplaination(questionNo){
+      $("explainMe"+questionNo).toggle();
+}
+//  explaination ends
+
 // showmsg("Msg Here");

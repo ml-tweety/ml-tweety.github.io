@@ -48,7 +48,7 @@
           opt3: "HyperText Markup Language",
           opt4: "None of these",
           correct_opt: "opt3",
-          explainMe: 'HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript',
+          explainMe: "HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript",
         },
         {
           question:
@@ -58,6 +58,7 @@
           opt3: "HTML, Head, Title, Body",
           opt4: "HTML, Head, Title, Body",
           correct_opt: "opt4",
+          explainMe: "No Explaination addded for question 2",
         },
         {
           question:
@@ -67,6 +68,7 @@
           opt3: "&lt;b\>",
           opt4: "&lt;br>",
           correct_opt: "opt3",
+          explainMe: "No Explaination addded for question 3",
         },
         {
           question:
@@ -76,6 +78,7 @@
           opt3: "&lt;h5>",
           opt4: "&lt;h6>",
           correct_opt: "opt2",
+          explainMe: "No Explaination addded for question 4",
         },
         {
           question:
@@ -85,6 +88,7 @@
           opt3: "&lt;pre>",
           opt4: "&lt;b>",
           correct_opt: "opt1",
+          explainMe: "No Explaination addded for question 5",
         },
         {
           question:
@@ -94,6 +98,7 @@
           opt3: "&lt;li>",
           opt4: "&lt;i>",
           correct_opt: "opt1",
+          explainMe: "No Explaination addded for question 6",
         },
         {
           question:
@@ -103,6 +108,7 @@
           opt3: "/",
           opt4: ".",
           correct_opt: "opt3",
+          explainMe: "No Explaination addded for question 7",
         },
         {
           question:
@@ -112,6 +118,7 @@
           opt3: "&lt;li>",
           opt4: "&lt;i>",
           correct_opt: "opt2",
+          explainMe: "No Explaination addded for question 8",
         },
         {
           question:
@@ -121,6 +128,7 @@
           opt3: "&lt;it>",
           opt4: "&lt;pre>",
           correct_opt: "opt1",
+          explainMe: "No Explaination addded  for question 9",
         },
         {
           question: "&ltinput> is -",
@@ -129,6 +137,7 @@
           opt3: "All of the above",
           opt4: "None of the above",
           correct_opt: "opt3",
+          explainMe: "No Explaination addded for question 10",
         },
       ];
       which_ad = ads_midquestion_position();
@@ -250,7 +259,8 @@
                   </tr>
                 </table>
                 <td>
-                  <button class="btn btn-primary" onClick=(showmsg(mcq_data[0]["explainMe"]));>Explain</button>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(1)">Explain</button>
+                  <explainMe1 class='hidden'><script>document.write(mcq_data[0]["explainMe"]);</script></explainMe1>
                 </td>
               </td>
             </tr>
@@ -346,6 +356,11 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(2)">Explain</button>
+                  <explainMe2 class='hidden'><script>document.write(mcq_data[1]["explainMe"]);</script></explainMe2>
+                </td>
+              </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -440,6 +455,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(3)">Explain</button>
+                  <explainMe3 class='hidden'><script>document.write(mcq_data[2]["explainMe"]);</script></explainMe3>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -534,6 +553,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(4)">Explain</button>
+                  <explainMe4 class='hidden'><script>document.write(mcq_data[3]["explainMe"]);</script></explainMe4>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -628,6 +651,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(5)">Explain</button>
+                  <explainMe5 class='hidden'><script>document.write(mcq_data[4]["explainMe"]);</script></explainMe5>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -723,6 +750,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(6)">Explain</button>
+                  <explainMe6 class='hidden'><script>document.write(mcq_data[5]["explainMe"]);</script></explainMe6>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -817,6 +848,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(7)">Explain</button>
+                  <explainMe7 class='hidden'><script>document.write(mcq_data[6]["explainMe"]);</script></explainMe7>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -911,6 +946,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(8)">Explain</button>
+                  <explainMe8 class='hidden'><script>document.write(mcq_data[7]["explainMe"]);</script></explainMe8>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -1005,6 +1044,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(9)">Explain</button>
+                  <explainMe9 class='hidden'><script>document.write(mcq_data[8]["explainMe"]);</script></explainMe9>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
@@ -1099,6 +1142,10 @@
                     </td>
                   </tr>
                 </table>
+                <td>
+                  <button class="btn btn-info btn-sm" onClick="showExplaination(10)">Explain</button>
+                  <explainMe10 class='hidden'><script>document.write(mcq_data[9]["explainMe"]);</script></explainMe10>
+                </td>
               </td>
             </tr>
             <!-- Question ends -->
